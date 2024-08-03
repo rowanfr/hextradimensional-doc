@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Hextradimensional]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>lib/media/favicon.png</url><title>Hextradimensional</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Sat, 03 Aug 2024 05:33:30 GMT</lastBuildDate><atom:link href="lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Sat, 03 Aug 2024 05:33:28 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[Block Types]]></title><description><![CDATA[ 
+ <br><br>These are the block Types defined from the RON file in the blocks directory and BlockType enum in voxels.rs.<br><br>
+<br>id: Air,
+<br>flags: [NoMine],
+<br>mesh: None,
+<br>texture: "images/voxels/stone.png",
+<br>color: LinearRgba((<br>
+red: 0.75,<br>
+green: 0.75,<br>
+blue: 0.75,<br>
+alpha: 0,<br>
+)),
+<br>solid: false
+<br><br>
+<br>id: BedRock,
+<br>flags: [],
+<br>mesh: None,
+<br>texture: "images/voxels/bedrock.png",
+<br>color: LinearRgba((<br>
+red: 0.25,<br>
+green: 0.25,<br>
+blue: 0.25,<br>
+alpha: 1.0,<br>
+)),
+<br><br>
+<br>id: Coal
+<br>flags: [Fuel,],
+<br>mesh: None,
+<br>texture: "images/voxels/coal.png",
+<br>color: LinearRgba((<br>
+red: 0.0,<br>
+green: 0.0,<br>
+blue: 0.0,<br>
+alpha: 1.0,<br>
+)),
+<br>solid: true,
+<br>components: [],
+<br><br>
+<br>id: CobaltBlock,
+<br>flags: [],
+<br>mesh: None,
+<br>texture: "images/voxels/refined_cobalt.png",
+<br>color: LinearRgba((<br>
+red: 0.0,<br>
+green: 0.0,<br>
+blue: 1.0,<br>
+alpha: 1.0,<br>
+)),
+<br>solid: true,
+<br>components: [],
+<br><br>
+<br>id: CobaltOre,
+<br>flags: [CanMelt(CobaltBlock),],
+<br>mesh: None,
+<br>texture: "images/voxels/ore_cobalt.png",
+<br>color: LinearRgba((<br>
+red: 0.3,<br>
+green: 0.3,<br>
+blue: 0.7,<br>
+alpha: 1.0,<br>
+)),
+<br>solid: true,
+<br>components: [],
+<br><br>
+<br>id: CopperBlock,
+<br>flags: [],
+<br>mesh: None,
+<br>texture: "images/voxels/refined_copper.png",
+<br>color: LinearRgba((<br>
+red: 1.0,<br>
+green: 0.7,<br>
+blue: 0.3,<br>
+alpha: 1.0,<br>
+)),
+<br>solid: true,
+<br>components: [],
+<br><br>
+<br>id: CopperOre,
+<br>flags: [CanMelt(CopperBlock),],
+<br>mesh: None,
+<br>texture: "images/voxels/ore_copper.png",
+<br>color: LinearRgba((<br>
+red: 0.4,<br>
+green: 1.0,<br>
+blue: 1.0,<br>
+alpha: 1.0,<br>
+)),
+<br>solid: true,
+<br>components: [],
+<br><br>
+<br>id: Drill(Up),
+<br>flags: [],
+<br>mesh: Some("images/multi_blocks/drill.glb#Mesh1/Primitive0"),
+<br>texture: "images/voxels/refined_iron.png",
+<br>color: LinearRgba((<br>
+red: 1.0,<br>
+green: 1.0,<br>
+blue: 1.0,<br>
+alpha: 1.0,<br>
+)),
+<br>solid: true,
+<br>components: [Extractor,],
+<br><br>
+<br>id: Furnace,
+<br>flags: [],
+<br>mesh: Some("images/multi_blocks/furnace.glb#Mesh0/Primitive0"),
+<br>texture: "images/multi_blocks/furnace.png",
+<br>color: LinearRgba((<br>
+red: 1.0,<br>
+green: 1.0,<br>
+blue: 1.0,<br>
+alpha: 1.0,<br>
+)),
+<br>solid: true,
+<br>components: [Melter,],
+<br><br>
+<br>id: Glass,
+<br>flags: [],
+<br>mesh: None,
+<br>texture: "images/voxels/glass.png",
+<br>color: LinearRgba((<br>
+red: 0.5,<br>
+green: 0.5,<br>
+blue: 1.0,<br>
+alpha: 1.0,<br>
+)),
+<br>solid: true,
+<br>components: [],
+<br><br>
+<br>id: IronBlock,
+<br>flags: [],
+<br>mesh: None,
+<br>texture: "images/voxels/refined_iron.png",
+<br>color: LinearRgba((<br>
+red: 0.5,<br>
+green: 0.5,<br>
+blue: 0.5,<br>
+alpha: 1.0,<br>
+)),
+<br>solid: true,
+<br>components: [],
+<br><br>
+<br>id: IronOre,
+<br>flags: [CanMelt(IronBlock),],
+<br>mesh: None,
+<br>texture: "images/voxels/ore_iron.png",
+<br>color: LinearRgba((<br>
+red: 1.0,<br>
+green: 0.0,<br>
+blue: 0.0,<br>
+alpha: 1.0,<br>
+)),
+<br>solid: true,
+<br>components: [],
+<br><br>
+<br>id: Magnesium,
+<br>flags: [Fuel],
+<br>mesh: None,
+<br>texture: "images/voxels/base.png",
+<br>color: LinearRgba((<br>
+red: 1.,<br>
+green: 0.9,<br>
+blue: 0.8,<br>
+alpha: 1.0,<br>
+)),
+<br><br>
+<br>id: Piston(Up),
+<br>flags: [],
+<br>mesh: Some("images/multi_blocks/pissy_tom.glb#Mesh0/Primitive0"),
+<br>texture: "images/multi_blocks/piston.png",
+<br>color: LinearRgba((<br>
+red: 1.0,<br>
+green: 1.0,<br>
+blue: 1.0,<br>
+alpha: 1.0,<br>
+)),
+<br>solid: true,
+<br>components: [Piston(1),],
+<br><br>
+<br>id: PistonL2(Up),
+<br>flags: [],
+<br>mesh: Some("images/multi_blocks/pissy_tom.glb#Mesh0/Primitive0"),
+<br>texture: "images/multi_blocks/piston_l2.png",
+<br>color: LinearRgba((<br>
+red: 1.0,<br>
+green: 1.0,<br>
+blue: 1.0,<br>
+alpha: 1.0,<br>
+)),
+<br>solid: true,
+<br>components: [Piston(2),],
+<br><br>
+<br>id: Potassium,
+<br>flags: [],
+<br>mesh: None,
+<br>texture: "images/voxels/base.png",
+<br>color: LinearRgba((<br>
+red: 1.,<br>
+green: 0.25,<br>
+blue: 1.,<br>
+alpha: 1.0,<br>
+)),
+<br><br>
+<br>id: Sand,
+<br>flags: [CanMelt(Glass),],
+<br>mesh: None,
+<br>texture: "images/voxels/sand.png",
+<br>color: LinearRgba((<br>
+red: 1.0,<br>
+green: 1.0,<br>
+blue: 0.0,<br>
+alpha: 1.0,<br>
+)),
+<br>solid: true,
+<br>components: [],
+<br><br>
+<br>id: Score,
+<br>flags: [],
+<br>mesh: None,
+<br>texture: "images/voxels/star.png",
+<br>color: LinearRgba((<br>
+red: 0.0,<br>
+green: 0.0,<br>
+blue: 0.0,<br>
+alpha: 0.0,<br>
+)),
+<br>solid: true,
+<br>components: [ScoreGive,],
+<br><br>
+<br>id: Sodium,
+<br>flags: [],
+<br>mesh: None,
+<br>texture: "images/voxels/base.png",
+<br>color: LinearRgba((<br>
+red: 0.96,<br>
+green: 0.68,<br>
+blue: 0.27,<br>
+alpha: 1.0,<br>
+)),
+<br><br>
+<br>id: Stone,
+<br>flags: [],
+<br>mesh: None,
+<br>texture: "images/voxels/stone.png",
+<br>color: LinearRgba((<br>
+red: 0.75,<br>
+green: 0.75,<br>
+blue: 0.75,<br>
+alpha: 1.0,<br>
+)),
+<br><br>
+<br>id: Voxel((0)),
+<br>flags: [],
+<br>mesh: None,
+<br>texture: "",
+<br>color: LinearRgba((<br>
+red: 0.0,<br>
+green: 0.0,<br>
+blue: 0.0,<br>
+alpha: 0.0,<br>
+)),
+<br><br>Flags are interpreted as a vector of the enum BlockFlags which is used to change the functionality of some blocks. The available flags are:<br><br>One can't mine this block<br><br>This block can be melted by a <a class="internal-link" data-href="##Furnace" href="about:blank##Furnace" target="_self" rel="noopener">furnace</a> using <a class="internal-link" data-href="##Fuel" href="about:blank##Fuel" target="_self" rel="noopener">fuel</a> and if it is melted it turns into the block type specified.<br><br>Can be consumed by a <a class="internal-link" data-href="##Furnace" href="about:blank##Furnace" target="_self" rel="noopener">furnace</a> to <a class="internal-link" data-href="##CanMelt(BlockType)" href="about:blank##CanMelt(BlockType)" target="_self" rel="noopener">melt</a> blocks<br><br>Components as specified in the RON files are based on the enum BlockLogic. They define markers for core functionality of blocks to be attached. The list of associated components is:<br><br>This extracts resources such as in the case of the <a class="internal-link" data-href="##Drill(Up)" href="about:blank##Drill(Up)" target="_self" rel="noopener">drill</a>.<br><br>This melts <a class="internal-link" data-href="##CanMelt(BlockType)" href="about:blank##CanMelt(BlockType)" target="_self" rel="noopener">meltable blocks</a> into there refined resources while consuming <a class="internal-link" data-href="##Fuel" href="about:blank##Fuel" target="_self" rel="noopener">fuel</a>.<br><br>This launches blocks with the power of the piston being specified as an u8 though seemingly converted to an f32.<br><br>This block is able to add to your total score.]]></description><link>block-types.html</link><guid isPermaLink="false">Block Types.md</guid><pubDate>Sat, 03 Aug 2024 05:19:28 GMT</pubDate></item><item><title><![CDATA[Docs For Plugins]]></title><description><![CDATA[ 
+ <br><a data-tooltip-position="top" aria-label="https://github.com/mgmeyers/obsidian-kanban" rel="noopener" class="external-link" href="https://github.com/mgmeyers/obsidian-kanban" target="_blank">Kanban</a>: <a rel="noopener" class="external-link" href="https://publish.obsidian.md/kanban/Obsidian+Kanban+Plugin" target="_blank">https://publish.obsidian.md/kanban/Obsidian+Kanban+Plugin</a><br><a data-tooltip-position="top" aria-label="https://github.com/obsidian-tasks-group/obsidian-tasks" rel="noopener" class="external-link" href="https://github.com/obsidian-tasks-group/obsidian-tasks" target="_blank">Tasks</a>: <a rel="noopener" class="external-link" href="https://publish.obsidian.md/tasks/Introduction" target="_blank">https://publish.obsidian.md/tasks/Introduction</a><br><a data-tooltip-position="top" aria-label="https://github.com/KosmosisDire/obsidian-webpage-export" rel="noopener" class="external-link" href="https://github.com/KosmosisDire/obsidian-webpage-export" target="_blank">Webpage Export</a>: <a rel="noopener" class="external-link" href="https://docs.obsidianweb.net/getting-started/0.-initiate-an-export.html" target="_blank">https://docs.obsidianweb.net/getting-started/0.-initiate-an-export.html</a>]]></description><link>docs-for-plugins.html</link><guid isPermaLink="false">Docs For Plugins.md</guid><pubDate>Sat, 03 Aug 2024 04:32:37 GMT</pubDate></item><item><title><![CDATA[Hextradimensional]]></title><description><![CDATA[ 
+ <br>Hextradimensional is a game which levies the conversion between a hexagonal plane and voxel world to enable a construction and management simulation. It does this by allowing the movement of items between voxel worlds based on there higher level relationship between the hexagonal world.<br>The core game loop can be broken down into early, middle, and late. The early game loop is created by first starting with basic mining. Once some mining has been detected the game then opens up some form of research such as a recipe book based on the number of items in the inventory. This research informs you how to make complex multi-block structures to further promote industrialization. This industrialization quickly enables one to collect all the resources they need for figuring out most of the recipes until they unlock the research block.<br>The middle phase is defined by the research block which consumes all resources thrown to it. This block enables the discovery of new tiles in the recipe book while also disposing of excess blocks. Every tick it will consume a local block and increment it's research counter. This should be used to unlock more voxel blocks such as machines that cut voxels in half. The research block should then use these new machines to inform harder requirements such as a half cut slab of yellow (determining both the block to be turned into a voxel and the need to process it through a machine).<br>The late phase after unlocking all tech is likely creating complex voxel structures for entertainment. This can be extended with randomly generated hexagonal extensions to the map and enemies to face, but ultimately at the end when one has unlocked everything and understands all the game has to offer it is likely any further time spend would either be creative voxel worlds or re-experiencing the game with mods.]]></description><link>hextradimensional.html</link><guid isPermaLink="false">Hextradimensional.md</guid><pubDate>Sat, 03 Aug 2024 00:17:35 GMT</pubDate></item><item><title><![CDATA[Tasks]]></title><description><![CDATA[ 
+ <br>Tasks are broken down into a few categories for the Kanban board. Backburner, To Discuss, To Do, In Progress, Done. Each of these mean:<br>
+Backburner: This is a feature that we want but we are not currently working on it.<br>
+To Discuss: This is a feature we may want, but more discussion is necessary.<br>
+To Do: Tasks to do in one's free time should be picked from this list.<br>
+In Progress: A task is reserved and currently being worked on. Don't work on a task here unless you put it in this category or are asked for help.<br>
+Done: The best category, completion.<br><br><br>Solidify file organization (<a rel="noopener" target="_self" class="internal-link">Kanban &gt; To Do</a>)<a class="tasks-edit" title="Edit task" href="about:blank#"></a><br>Document what functions do with doc comments (<a rel="noopener" target="_self" class="internal-link">Kanban &gt; To Do</a>)<a class="tasks-edit" title="Edit task" href="about:blank#"></a><br>Fix various bugs (Warnings/Errors that happen during normal gameplay) (<a rel="noopener" target="_self" class="internal-link">Kanban &gt; To Do</a>)<a class="tasks-edit" title="Edit task" href="about:blank#"></a><br>Clean up the code (Make the codebase pass Clippy test) (<a rel="noopener" target="_self" class="internal-link">Kanban &gt; To Do</a>)<a class="tasks-edit" title="Edit task" href="about:blank#"></a><br>Clean up conflicting implementations for Color (<a rel="noopener" target="_self" class="internal-link">Kanban &gt; To Do</a>)<a class="tasks-edit" title="Edit task" href="about:blank#"></a>5 tasks<br><br><br>Multiplayer (Will likely be broken up into more cards as we learn more) (<a rel="noopener" target="_self" class="internal-link">Kanban &gt; Backburner</a>)<a class="tasks-edit" title="Edit task" href="about:blank#"></a><br>Complex Multiblock structures with voxels (Such as being able to use voxels as the wheels of a car). This should be physics based and use automatically generated meshes from the voxel mesh generator to naturally promote good designs. (<a rel="noopener" target="_self" class="internal-link">Kanban &gt; Backburner</a>)<a class="tasks-edit" title="Edit task" href="about:blank#"></a><br>Voxel Collision Mesh Generator (<a rel="noopener" target="_self" class="internal-link">Kanban &gt; Backburner</a>)<a class="tasks-edit" title="Edit task" href="about:blank#"></a><br>Voxel Mesh Generator (<a rel="noopener" target="_self" class="internal-link">Kanban &gt; Backburner</a>)<a class="tasks-edit" title="Edit task" href="about:blank#"></a><br>Voxel Texture Generator (<a rel="noopener" target="_self" class="internal-link">Kanban &gt; Backburner</a>)<a class="tasks-edit" title="Edit task" href="about:blank#"></a><br>Voxel Modification with machines (<a rel="noopener" target="_self" class="internal-link">Kanban &gt; Backburner</a>)<a class="tasks-edit" title="Edit task" href="about:blank#"></a><br>Destructible blocks and player solutions for destruction of resource sources<br><br>0 tasks<br><br><br>Enemies (<a rel="noopener" target="_self" class="internal-link">Kanban &gt; To Discuss</a>)<a class="tasks-edit" title="Edit task" href="about:blank#"></a><br>Mod Support (<a rel="noopener" target="_self" class="internal-link">Kanban &gt; To Discuss</a>)<a class="tasks-edit" title="Edit task" href="about:blank#"></a>2 tasks<br><br><br>Enemies (<a rel="noopener" target="_self" class="internal-link">Kanban &gt; To Discuss</a>)<a class="tasks-edit" title="Edit task" href="about:blank#"></a><br>Mod Support]]></description><link>tasks.html</link><guid isPermaLink="false">Tasks.md</guid><pubDate>Sat, 03 Aug 2024 05:25:25 GMT</pubDate></item></channel></rss>
